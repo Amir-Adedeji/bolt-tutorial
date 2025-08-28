@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">                
+    <link href="bolt.css" rel="stylesheet"/>
+    <title>Bolt</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="Logo"><img class="w-12" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iMzI
+                iIHZpZXdCb3g9IjAgMCA1NCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdG
+                ggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC42OTYgMTEuMTE3M0MxNi43OTc2IDcuNjk0Mi
+                AxNS43NTA2IDMuMjA3MiAxMi4zNTc1IDEuMDg3MDZDMTEuMjE4OCAwLjM3Nzc3MiA5Ljg5NjY5IDAgOC41NTkzIDBIMFYyMy41OT
+                E0SDkuNjI5MjFDMTMuNjE4NSAyMy41OTE0IDE2Ljg1MTEgMjAuMzMwMyAxNi44NTExIDE2LjMwNTlDMTYuODUxMSAxNC4zNTUzID
+                E2LjA3OTMgMTIuNDg5NiAxNC42OTYgMTEuMTE3M1pNNS41MDI0MSA1LjU1MDkzSDguNTU5M0M5LjUwNjkzIDUuNTUwOTMgMTAuMj
+                c4OCA2LjMyOTYgMTAuMjc4OCA3LjI4NTU5QzEwLjI3ODggOC4yNDE1OSA5LjUwNjkzIDkuMDIwMjYgOC41NTkzIDkuMDIwMjZINS
+                41MDI0MVY1LjU1MDkzWk05LjYyOTIxIDE4LjA0MDVINS41MDI0MVYxNC41NzEySDkuNjI5MjFDMTAuNTc2OCAxNC41NzEyIDExLj
+                M0ODcgMTUuMzQ5OSAxMS4zNDg3IDE2LjMwNTlDMTEuMzQ4NyAxNy4yNjE4IDEwLjU3NjggMTguMDQwNSA5LjYyOTIxIDE4LjA0MD
+                VaTTQzLjQ0NjEgMFYyMy41OTE0SDM3Ljk0MzdWMS4xNzk1N0w0My40NDYxIDBaTTI3LjM5NzQgNi42OTk2NUMyMi43MTI3IDYuNj
+                k5NjUgMTguOTA2OSAxMC41MzEzIDE4LjkwNjkgMTUuMjY1QzE4LjkwNjkgMTkuOTkxIDIyLjcwNTEgMjMuODMwNCAyNy4zOTc0ID
+                IzLjgzMDRDMzIuMDgyMSAyMy44MzA0IDM1Ljg4NzkgMTkuOTk4OCAzNS44ODc5IDE1LjI2NUMzNS44ODAzIDEwLjUzOSAzMi4wOD
+                IxIDYuNjk5NjUgMjcuMzk3NCA2LjY5OTY1Wk0yNy4zOTc0IDE4LjA0MDVDMjUuODc2NiAxOC4wNDA1IDI0LjY0NjIgMTYuNzk5MyAyNC42NDYyIDE1LjI2NUMyNC42NDYyIDEzLjczMDggMjUuODc2NiAxMi40ODk2IDI3LjM5NzQgMTIuNDg5NkMyOC45MTgyIDEyLjQ4OTYgMzAuMTQ4NiAxMy43MzA4IDMwLjE0ODYgMTUuMjY1QzMwLjE0ODYgMTYuNzk5MyAyOC45MTgyIDE4LjA0MDUgMjcuMzk3NCAxOC4wNDA1Wk0zMC4xNDg2IDI4LjYwMjdDMzAuMTQ4NiAzMC4xMzU1IDI4LjkxNjggMzEuMzc4MiAyNy4zOTc0IDMxLjM3ODJDMjUuODc4IDMxLjM3ODIgMjQuNjQ2MiAzMC4xMzU1IDI0LjY0NjIgMjguNjAyN0MyNC42NDYyIDI3LjA2OTggMjUuODc4IDI1LjgyNzIgMjcuMzk3NCAyNS44MjcyQzI4LjkxNjggMjUuODI3MiAzMC4xNDg2IDI3LjA2OTggMzAuMTQ4NiAyOC42MDI3Wk01My45OTIzIDcuMDE1NzZWMTIuNTU5SDUxLjI0ODhWMTYuOTIyNkM1MS4yNDg4IDE4LjI0MSA1MS42NjkxIDE5LjIxMjQgNTIuNzY5NiAxOS4yMTI0QzUzLjE4OTkgMTkuMjIwMSA1My42MDI2IDE5LjE2NjEgNTQgMTkuMDUwNVYyMy4xMzY2QzUzLjE3NDYgMjMuNTkxNCA1Mi4yNTc2IDIzLjgzMDQgNTEuMzE3NiAyMy44MzA0SDUxLjI0ODhDNTEuMjEzNCAyMy44MzA0IDUxLjE3OCAyMy44Mjg0IDUxLjE0MzYgMjMuODI2NEM1MS4xMTEyIDIzLjgyNDUgNTEuMDc5OCAyMy44MjI3IDUxLjA1MDEgMjMuODIyN0g1MC45OTY2TDUwLjg5NzIgMjMuODE1QzQ3LjgyNTEgMjMuNjUzMSA0NS43Mzg3IDIxLjcwMjYgNDUuNzM4NyAxOC4zMTgxVjE4LjMwMjZWMTguMjc5NVYxMi41NjY3VjMuOTU1MDRMNTEuMjQxMSAyLjc3NTQ2VjcuMDE1NzZINTMuOTkyM1oiIGZpbGw9IiMyRjMxM0YiLz4KPC9zdmc+Cg==" alt="Bolt logo"></div>
+            <ul class="top">
+                <li>
+                    <a href="#">EN</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li >
+                    <a href="#" class="register">Register</a>
+                </li>
+                <li>
+                    <div class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h3>
+                Let's make cities for people
+            </h3>
+            <h1>
+                Ride out or stay in
+            </h1>
+            <p>
+                Get picked up anywhere with Bolt.<br>Have anything delivered with Bolt Food.
+            </p>
+            <div class="container1">
+                <h2 class="bolt">
+                    Get Bolt
+                </h2>
+                <h2 class="food">
+                    Get Bolt Food
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="first_image">
+        <div class="container">
+            <img alt="" fetchpriority="high" decoding="async" data-nimg="fill" style="position: static;height:auto;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 520w, https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 768w, https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 1024w, https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 1280w, https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 1640w, https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp 3280w" src="https://assets.cms.bolt.eu/index_media_1_946c3714a8.webp">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="service">
+                <h1>Our services</h1>
+                <p>Products and features vary by country. Some features listed here may not be available in your app</p>
+            </div>
+            <div class="boxes">
+                <!-- <div class="dark" style="background-image: url('C:\Users\AMIR\Downloads\pexels-tracy-le-blanc-67789-607812.jpg height: 800px; width: 300px;');"> -->
+                <div class="box">                       
+                    <h1>Rides</h1>
+                    <p>Request in seconds, ride in minutes.</p>
+                    <button>Get started</button>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="dark"> -->
+                <div class="box">
+                    <h1>Delivery</h1>
+                    <p>Your favourite food, delivered fast.</p>
+                    <button>Go to Bolt Food</button>
+                </div>
+                <!-- </div> -->
+                <div class="box">
+                    <h1>Car-sharing</h1>
+                    <p>High-quality car rental made easy.</p>
+                    <button>Go to Bolt Drive</button>
+                </div>
+                <div class="box">
+                    <h1>Groceries</h1>
+                    <p>All the essentials whenever you need them.</p>
+                    <button>Go to Bolt Market</button>
+                </div>
+                <div class="box">
+                    <h1>Business</h1>
+                    <p>Manage business travel for your team and clients.</p>
+                    <button>Go to Bolt Business</button>
+                </div>
+                <div class="box">
+                    <h1>Micromobility</h1>
+                    <p>2-wheel ride rental at your fingertips.</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <!-- <div class="control">
+                <h1><</h1>
+                <h1>></h1>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="second_image">
+        <div class="container">
+            <img alt="Metro ad featuring the Bolt logo, two passengers in a Bolt car, and the slogan 'Make it a one stop journey' on a green background." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_08_88c64b51d9_1b9fd1c2b8.webp">
+        </div>
+    </section>
+
+    <section class="making_cities">
+        <div class="container">
+            <div class="share">
+                <h1 class="share">Making cities for people, not cars.</h1>
+                <p class="share">By sharing our knowledge of the industry and real-time data we're helping to improve our cities.</p>
+            </div>
+            <div class="nexts">
+                <h2>Sharing best practices</h2>
+                <p>We're able to provide insights that help local authorities make their cities more connected and liveable.</p>
+                <a href="#">Learn more</a>
+                <h2>One app, many ways to move</h2>
+                <p>With multiple transport services inside a single app, getting around safely, in a more sustainable way, has never been easier.</p>
+                <a href="#">Learn more</a>
+                <h2>Less is more</h2>
+                <p>Shared transport can transform our cities by lowering emissions, reducing congestion, and the demand for parking spaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="separators">
+                <a href="#">←</a>
+                <p>...</p>
+                <a href="#">→</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="third_images">
+        <img alt="Collage of images showing different services Bolt provides." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_09_0ca454502c_0e486dc262.webp">
+    </div>
+
+    <section class="about_us">
+        <div class="container">
+            <h2>About us</h2>
+            <h1>Bolt is the first European mobility super-app.</h1>
+            <p>We're making cities for people, offering better alternatives for every purpose a private car serves — including ride-hailing, shared cars, scooters, and food and grocery delivery.</p>
+                <a href="#mission" class="mission">Our mission</a>
+        </div>
+    </section>
+
+    <section class="another_image">
+        <img alt="Bolt app open on a smart phone." loading="lazy" decoding="async" data-nimg="fill" style="position: static;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/sm_Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 520w, https://assets.cms.bolt.eu/md_Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 768w, https://assets.cms.bolt.eu/lg_Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 1024w, https://assets.cms.bolt.eu/xl_Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_10_fd3be39c24_985d35fc0b.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_10_fd3be39c24_985d35fc0b.webp">
+    </section>
+
+    <section class="earn_money">
+        <div class="container">
+            <div class="earn">
+                <h1>Earn money with Bolt</h1>
+                <p>Join over 4.5 million partners worldwide that earn with Bolt. For drivers, couriers, merchants, and fleet owners looking for new ways to boost revenue.</p>
+            </div>
+            <div class="side_by_side">
+                <div class="side">
+                    <img alt="Person inside a Tesla holding a smartphone displaying the Bolt app navigation screen." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:auto;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_14_c5e9168f7b_5172b52b9e.webp">
+                    <div class="first">
+                        <h2>Earn money as a Bolt driver</h2>
+                        <h1>Drive and earn money</h1>
+                        <p>Our 200+ million riders will send you plenty of ride requests.
+                            When demand is high, you can earn even more.
+                        </p>
+                        <button>Register to drive</button>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="second">
+                        <h2>Become a Bolt courier partner</h2>
+                        <h1>Earn with every delivery</h1>
+                        <p>You decide when and how often you deliver — weekdays, evenings, weekends, or just the occasional hour — it's up to you.
+                        </p>
+                        <button>Register as a courier</button>
+                    </div>
+                    <img alt="A Bolt Food courier in a green jacket, holding a phone and standing next to a bicycle, ready for delivery." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:auto;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_15_a150897472_e2fb5d478c.webp">
+                </div>
+                <div class="side">
+                    <img alt="Restaurant worker behind a bar counter displaying a smartphone with the Bolt Food delivery app." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:auto;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_16_9682e3376b_8e6086d7ac.webp">
+                    <div class="third">
+                        <h2>Increase earnings as merchant</h2>
+                        <h1>Increase your sales and reach new customers</h1>
+                        <p>Millions of our users are ordering food or goods from restaurants and stores just like yours.
+                        </p>
+                        <button>Register with Bolt Food</button>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="fourth">
+                        <h2>Join Bolt with your fleet and earn more</h2>
+                        <h1>Grow your transport business</h1>
+                        <p>As a fleet owner and Bolt partner, you can manage your assets from one easy-to-use dashboard and grow your transprt business.
+                        </p>
+                        <button>Register your fleet</button>
+                    </div>
+                    <img alt="A driver wearing a grey knit hat and glasses smiling while sitting in a white and green Bolt vehicle." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:auto;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_17_40d1177c79_9f54189136.webp">
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="latest_features">
+        <div class="container">
+            <h2>Latest features</h2>
+            <h1>Book a ride in advance</h1>
+            <h3>Planning a trip? Schedule a Bolt ride in advance for even more convenient airport transfers, important meetings, or any occasion that requires punctuality. Simply enter your details and secure your ride up to 90 days ahead.</h3>
+        </div>
+    </section>
+
+    <section class="fourth_image">
+        <div class="container">
+            <img alt="People entering a Bolt vehicle." loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:auto;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 520w, https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 768w, https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 1024w, https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 1280w, https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 1640w, https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp 3280w" src="https://assets.cms.bolt.eu/Index_DT_Media_11_e4c0bc0c41_9c01312691.webp">
+        </div>
+    </section>
+
+    <section class="download">
+        <section class="text">
+            <h1>Download our apps</h1>
+            <p>Available for iOS and Android devices.</p>
+        </section>
+        <section class="image_download">
+            <div class="container">
+                <img alt="Download our apps" loading="lazy" decoding="async" data-nimg="fill" style="position:static;height:2000px;width:2000px;left:0;top:0;right:0;bottom:0;color:transparent" src="https://assets.homepage.bolt.eu/1.10.37/public/images/common/phone-mockups/generic.webp">
+                <div class="split">
+                    <h2>Rides</h2>
+                    <h2>Delivery</h2>
+                    <div class="rides">
+                        <h1>The fast, affordable way to ride</h1>
+                        <p>Available for iOS and Android devices</p>
+                        <button>Get Bolt</button>
+                    <div class="delivery">
+                        <h1>The food you love, delivered fast!</h1>
+                        <p>Available for iOS and Android devices</p>
+                        <button>Get Bolt Food</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div>
+                <h1>News and updates</h1>
+                <button>View all</button>
+            </div>
+            <div class="boxes">
+                <div class="first_box">
+                    <img alt="Bolt and Driver Technologies Inc. introduce a convenient and affordable dash cam solution" decoding="async" loading="lazy" width="800px" height="360px" src="https://assets.cms.bolt.eu/Resizing_for_Bolt_7ff08c5a75.png">
+                    <div>
+                        <p>30/6/2025</p>
+                        <h1>Bolt and Driver Technologies Inc. introduce a convenient...</h1>
+                        <p>Bolt has teamed up with Driver Technologies to offer an affordable dash cam app that boosts safety and peace of mind——no hardeware required</p>
+                    </div>
+                </div>
+                <div class="second_box">
+                    <div>
+                        <img alt="Cover rides for your loved ones with Family Profiles" decoding="async" loading="lazy" src="https://assets.cms.bolt.eu/family_profile_email_header_690x388px_3633066b1f.png">
+                        <div>
+                            <h1>Cover rides for your loved ones with Family Profiles</h1>
+                            <p>11/6/2025</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img alt="Bolt Ambassador Program Nigeria  – Terms and Conditions" decoding="async" loading="lazy" src="https://assets.cms.bolt.eu/Copy_of_Blog_Header_1200x628px_1_7c5c73a247.png">
+                        <div>
+                            <h1>Bolt Ambassador Program Nigeria- Terms and...</h1>
+                            <p>18/5/2025</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img alt="Breaking stereotypes: Meet a resilient female driver changing the narrative" decoding="async" loading="lazy" src="https://assets.cms.bolt.eu/Copy_of_Blog_Header_E2_80_93_1200x628px_edc1444ca8.jpeg">
+                        <div>
+                            <h1>Breaking stereotyypes: Meet a resilient female driver...</h1>
+                            <p>12/2/2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footers">
+                <div class="footers1">
+                    <div class="products">
+                        <span>Products</span>
+                    </div>
+                    <div class="products1">
+                        <ul>
+                            <li>
+                                Rides
+                            </li>
+                            <li>
+                                Scooters
+                            </li>
+                            <li>
+                               E-Bikes
+                            </li>
+                            <li>
+                                Bolt Drive
+                            </li>
+                            <li>
+                                Bolt Food
+                            </li>
+                            <li>
+                                Bolt Market
+                            </li>
+                            <li>
+                                Bolt Business
+                            </li>
+                            <li>
+                                Bolt Plus
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers2">
+                    <div class="earn">
+                        <span>Earn</span>
+                    </div>
+                    <div class="earn1">
+                        <ul>
+                            <li>
+                                Bolt Drivers
+                            </li>
+                            <li>
+                                Bolt Couriers
+                            </li>
+                            <li>
+                               Bolt Food Merchants
+                            </li>
+                            <li>
+                                Bolt Fleets
+                            </li>
+                            <li>
+                                Bolt Franchise
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers3">
+                    <div class="company">
+                        <span>Company</span>
+                    </div>
+                    <div class="company1">
+                        <ul>
+                            <li>
+                                About Bolt
+                            </li>
+                            <li>
+                                Careers
+                            </li>
+                            <li>
+                               Sustainability
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                            <li>
+                                Press
+                            </li>
+                            <li>
+                                Brand Guidelines
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers4">
+                    <div class="support">
+                        <span>Support</span>
+                    </div>
+                    <div class="support1">
+                        <ul>
+                            <li>
+                                Riders
+                            </li>
+                            <li>
+                                Drivers
+                            </li>
+                            <li>
+                               Bolt Food
+                            </li>
+                            <li>
+                                Couriers
+                            </li>
+                            <li>
+                                Fleets
+                            </li>
+                            <li>
+                                Restaurants
+                            </li>
+                            <li>
+                                Bolt Business
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers5">
+                    <div class="safety">
+                        <span>Safety</span>
+                    </div>
+                    <div class="safety1">
+                        <ul>
+                            <li>
+                                Rider safety
+                            </li>
+                            <li>
+                                Driver safety
+                            </li>
+                            <li>
+                               Scooter safety
+                            </li>
+                            <li>
+                                Safety lab
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers6">
+                    <div class="locations">
+                        <span>Locations</span>
+                    </div>
+                    <div class="locations1">
+                        <ul>
+                            <li>
+                                Our cities
+                            </li>
+                            <li>
+                                Our airports
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers5">
+                    <div class="safety">
+                        <span>Safety</span>
+                    </div>
+                    <div class="safety1">
+                        <ul>
+                            <li>
+                                Rider safety
+                            </li>
+                            <li>
+                                Driver safety
+                            </li>
+                            <li>
+                               Scooter safety
+                            </li>
+                            <li>
+                                Safety lab
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footers6">
+                    <div class="city_solutions">
+                        <span>City solutions</span>
+                    </div>
+                    <div class="city_solutions1">
+                        <ul>
+                            <li>
+                                Our mission
+                            </li>
+                            <li>
+                                Charging docks
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <span class="separators"></span>  
+
+        </div>
+        <div class="container">
+            <div class="closing">
+                <div class="close">
+                    <h1>EN</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Get Bolt</a>
+                        </li>
+                        <li>
+                            <a href="#">Get Bolt Food</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ending">
+                <div class="end">
+                    <ul>
+                        <li>
+                            <a href="#"><img class="w-12" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iMzI
+                                iIHZpZXdCb3g9IjAgMCA1NCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdG
+                                ggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC42OTYgMTEuMTE3M0MxNi43OTc2IDcuNjk0Mi
+                                AxNS43NTA2IDMuMjA3MiAxMi4zNTc1IDEuMDg3MDZDMTEuMjE4OCAwLjM3Nzc3MiA5Ljg5NjY5IDAgOC41NTkzIDBIMFYyMy41OT
+                                E0SDkuNjI5MjFDMTMuNjE4NSAyMy41OTE0IDE2Ljg1MTEgMjAuMzMwMyAxNi44NTExIDE2LjMwNTlDMTYuODUxMSAxNC4zNTUzID
+                                E2LjA3OTMgMTIuNDg5NiAxNC42OTYgMTEuMTE3M1pNNS41MDI0MSA1LjU1MDkzSDguNTU5M0M5LjUwNjkzIDUuNTUwOTMgMTAuMj
+                                c4OCA2LjMyOTYgMTAuMjc4OCA3LjI4NTU5QzEwLjI3ODggOC4yNDE1OSA5LjUwNjkzIDkuMDIwMjYgOC41NTkzIDkuMDIwMjZINS
+                                41MDI0MVY1LjU1MDkzWk05LjYyOTIxIDE4LjA0MDVINS41MDI0MVYxNC41NzEySDkuNjI5MjFDMTAuNTc2OCAxNC41NzEyIDExLj
+                                M0ODcgMTUuMzQ5OSAxMS4zNDg3IDE2LjMwNTlDMTEuMzQ4NyAxNy4yNjE4IDEwLjU3NjggMTguMDQwNSA5LjYyOTIxIDE4LjA0MD
+                                VaTTQzLjQ0NjEgMFYyMy41OTE0SDM3Ljk0MzdWMS4xNzk1N0w0My40NDYxIDBaTTI3LjM5NzQgNi42OTk2NUMyMi43MTI3IDYuNj
+                                k5NjUgMTguOTA2OSAxMC41MzEzIDE4LjkwNjkgMTUuMjY1QzE4LjkwNjkgMTkuOTkxIDIyLjcwNTEgMjMuODMwNCAyNy4zOTc0ID
+                                IzLjgzMDRDMzIuMDgyMSAyMy44MzA0IDM1Ljg4NzkgMTkuOTk4OCAzNS44ODc5IDE1LjI2NUMzNS44ODAzIDEwLjUzOSAzMi4wOD
+                                IxIDYuNjk5NjUgMjcuMzk3NCA2LjY5OTY1Wk0yNy4zOTc0IDE4LjA0MDVDMjUuODc2NiAxOC4wNDA1IDI0LjY0NjIgMTYuNzk5MyAyNC42NDYyIDE1LjI2NUMyNC42NDYyIDEzLjczMDggMjUuODc2NiAxMi40ODk2IDI3LjM5NzQgMTIuNDg5NkMyOC45MTgyIDEyLjQ4OTYgMzAuMTQ4NiAxMy43MzA4IDMwLjE0ODYgMTUuMjY1QzMwLjE0ODYgMTYuNzk5MyAyOC45MTgyIDE4LjA0MDUgMjcuMzk3NCAxOC4wNDA1Wk0zMC4xNDg2IDI4LjYwMjdDMzAuMTQ4NiAzMC4xMzU1IDI4LjkxNjggMzEuMzc4MiAyNy4zOTc0IDMxLjM3ODJDMjUuODc4IDMxLjM3ODIgMjQuNjQ2MiAzMC4xMzU1IDI0LjY0NjIgMjguNjAyN0MyNC42NDYyIDI3LjA2OTggMjUuODc4IDI1LjgyNzIgMjcuMzk3NCAyNS44MjcyQzI4LjkxNjggMjUuODI3MiAzMC4xNDg2IDI3LjA2OTggMzAuMTQ4NiAyOC42MDI3Wk01My45OTIzIDcuMDE1NzZWMTIuNTU5SDUxLjI0ODhWMTYuOTIyNkM1MS4yNDg4IDE4LjI0MSA1MS42NjkxIDE5LjIxMjQgNTIuNzY5NiAxOS4yMTI0QzUzLjE4OTkgMTkuMjIwMSA1My42MDI2IDE5LjE2NjEgNTQgMTkuMDUwNVYyMy4xMzY2QzUzLjE3NDYgMjMuNTkxNCA1Mi4yNTc2IDIzLjgzMDQgNTEuMzE3NiAyMy44MzA0SDUxLjI0ODhDNTEuMjEzNCAyMy44MzA0IDUxLjE3OCAyMy44Mjg0IDUxLjE0MzYgMjMuODI2NEM1MS4xMTEyIDIzLjgyNDUgNTEuMDc5OCAyMy44MjI3IDUxLjA1MDEgMjMuODIyN0g1MC45OTY2TDUwLjg5NzIgMjMuODE1QzQ3LjgyNTEgMjMuNjUzMSA0NS43Mzg3IDIxLjcwMjYgNDUuNzM4NyAxOC4zMTgxVjE4LjMwMjZWMTguMjc5NVYxMi41NjY3VjMuOTU1MDRMNTEuMjQxMSAyLjc3NTQ2VjcuMDE1NzZINTMuOTkyM1oiIGZpbGw9IiMyRjMxM0YiLz4KPC9zdmc+Cg==" alt="Bolt logo"></div></a>
+                        </li>
+                        <li>
+                            <a data-accent-color="" aria-label="Facebook" href="https://www.facebook.com/BoltNigeria/" rel="noreferrer noopener" target="_blank" class="rt-Text rt-reset rt-Link rt-underline-auto rt-reset rt-BaseButton rt-r-size-3 rt-variant-ghost rt-high-contrast rt-IconButton"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Facebook logo"><path d="M12 2C17.5228 2 22 6.49365 22 12.0367C22 17.1683 18.1636 21.3998 13.212 22V15.104H15.9172L16.4784 12.0367L13.212 12.0367V10.952C13.212 9.33123 13.8456 8.70775 15.4852 8.70775C15.9425 8.70775 16.3199 8.71779 16.563 8.73787C16.5904 8.74014 16.6161 8.74253 16.64 8.74505C16.6398 8.74504 16.6401 8.74507 16.64 8.74505L16.6404 5.96491C16.6106 5.95663 16.578 5.94835 16.5429 5.9401C16.0499 5.82407 15.0576 5.71556 14.466 5.71556C11.1244 5.71556 9.58397 7.29896 9.58397 10.7151V12.0367H7.52197V15.1039L9.58397 15.104V21.7779C5.22859 20.693 2 16.7434 2 12.0367C2 6.49365 6.4772 2 12 2Z" fill="currentColor"></path></svg></a>
+                        </li>
+                        <li>
+                            <a data-accent-color="" aria-label="Twitter" href="https://x.com/Boltapp/" rel="noreferrer noopener" target="_blank" class="rt-Text rt-reset rt-Link rt-underline-auto rt-reset rt-BaseButton rt-r-size-3 rt-variant-ghost rt-high-contrast rt-IconButton"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="X logo"><path d="M17.7483 3H20.8037L14.0952 10.6384L21.9328 21H15.7823L10.9668 14.7033L5.45387 21H2.39852L9.50554 12.8303L2 3H8.30332L12.6539 8.75203L17.7483 3ZM16.679 19.2066H18.3727L7.41328 4.72694H5.59336L16.679 19.2066Z" fill="currentColor"></path></svg></a>
+                        </li>
+                        <li>
+                            <a data-accent-color="" aria-label="Instagram" href="https://www.instagram.com/bolt_nigeria/" rel="noreferrer noopener" target="_blank" class="rt-Text rt-reset rt-Link rt-underline-auto rt-reset rt-BaseButton rt-r-size-3 rt-variant-ghost rt-high-contrast rt-IconButton"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Instagram logo"><path d="M14.9971 11.979C14.9971 13.6375 13.6526 14.982 11.9941 14.982C10.3356 14.982 8.99109 13.6375 8.99109 11.979C8.99109 10.3205 10.3356 8.97598 11.9941 8.97598C13.6526 8.97598 14.9971 10.3205 14.9971 11.979Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20.5281 6.08902C20.7952 6.79779 20.937 7.54764 20.9471 8.30502C21.0028 9.25761 21.0031 9.56915 21.005 11.9804L21.0051 12.014C21.0051 14.457 20.9921 14.762 20.9491 15.724C20.9341 16.473 20.7931 17.211 20.5301 17.911C20.2982 18.5087 19.9442 19.0515 19.4909 19.5049C19.0376 19.9582 18.4948 20.3121 17.8971 20.544C17.1974 20.8066 16.4582 20.9483 15.7111 20.963C14.7561 21.019 14.4431 21.019 12.0011 21.019C9.55907 21.019 9.25407 21.006 8.29107 20.963C7.54244 20.9384 6.8035 20.7862 6.10607 20.513C5.50813 20.2816 4.96505 19.928 4.51151 19.4748C4.05797 19.0216 3.70395 18.4788 3.47207 17.881C3.20907 17.18 3.06807 16.442 3.05307 15.694C2.99707 14.738 2.99707 14.426 2.99707 11.984C2.99707 9.54202 3.01007 9.23702 3.05307 8.27402C3.06719 7.52713 3.2089 6.78815 3.47207 6.08902C3.70356 5.49108 4.05732 4.94804 4.5107 4.49465C4.96409 4.04126 5.50713 3.68751 6.10507 3.45602C6.80442 3.19349 7.54323 3.05147 8.29007 3.03602C9.24507 2.98102 9.55807 2.98102 12.0001 2.98102C14.4421 2.98102 14.7471 2.99302 15.7091 3.03602C16.4562 3.05136 17.1954 3.19338 17.8951 3.45602C18.4929 3.68767 19.0359 4.04148 19.4892 4.49485C19.9426 4.94822 20.2964 5.49117 20.5281 6.08902ZM7.37107 11.979C7.37107 14.533 9.44007 16.602 11.9941 16.602C13.2202 16.602 14.396 16.115 15.263 15.248C16.13 14.381 16.6171 13.2051 16.6171 11.979C16.6171 10.7529 16.13 9.57704 15.263 8.71006C14.396 7.84308 13.2202 7.35602 11.9941 7.35602C9.44007 7.35602 7.37107 9.42502 7.37107 11.979ZM16.3884 8.18123C16.5192 8.23536 16.6595 8.26315 16.8011 8.26302C17.3961 8.26302 17.8781 7.78102 17.8781 7.18502C17.8781 7.04352 17.8502 6.9034 17.7961 6.77268C17.7419 6.64195 17.6625 6.52317 17.5625 6.42311C17.4624 6.32306 17.3436 6.24369 17.2129 6.18954C17.0822 6.13539 16.9421 6.10752 16.8006 6.10752C16.6591 6.10752 16.519 6.13539 16.3882 6.18954C16.2575 6.24369 16.1387 6.32306 16.0387 6.42311C15.9386 6.52317 15.8592 6.64195 15.8051 6.77268C15.7509 6.9034 15.7231 7.04352 15.7231 7.18502C15.7229 7.32662 15.7507 7.46686 15.8049 7.59771C15.859 7.72855 15.9384 7.84744 16.0385 7.94757C16.1386 8.0477 16.2575 8.1271 16.3884 8.18123Z" fill="currentColor"></path></svg></a>
+                        </li>
+                        <li>
+                            <a data-accent-color="" aria-label="LinkedIn" href="https://www.linkedin.com/company/bolt-eu/" rel="noreferrer noopener" target="_blank" class="rt-Text rt-reset rt-Link rt-underline-auto rt-reset rt-BaseButton rt-r-size-3 rt-variant-ghost rt-high-contrast rt-IconButton"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="LinkedIn logo"><path d="M7.17104 5.00898C7.17104 6.21738 6.19144 7.19698 4.98304 7.19698C3.77464 7.19698 2.79504 6.21738 2.79504 5.00898C2.79504 3.80058 3.77464 2.82098 4.98304 2.82098C6.19144 2.82098 7.17104 3.80058 7.17104 5.00898Z" fill="currentColor"></path><path d="M9.23697 20.994V8.85502H12.855V10.515H12.906C13.409 9.56202 14.639 8.55502 16.474 8.55502C20.296 8.55502 21 11.068 21 14.338V20.995H17.229V15.091C17.229 13.684 17.205 11.873 15.268 11.873C13.304 11.873 13.006 13.407 13.006 14.991V20.994H9.23697Z" fill="currentColor"></path><path d="M6.86997 8.85502H3.09497V20.994H6.86997V8.85502Z" fill="currentColor"></path></svg></a>
+                        </li>
+                        <li>
+                            <a data-accent-color="" aria-label="TikTok" href="https://www.tiktok.com/@bolt" rel="noreferrer noopener" target="_blank" class="rt-Text rt-reset rt-Link rt-underline-auto rt-reset rt-BaseButton rt-r-size-3 rt-variant-ghost rt-high-contrast rt-IconButton"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="TikTok logo"><path d="M19.59 6.69C18.5932 6.47079 17.6914 5.94144 17.0141 5.17789C16.3368 4.41435 15.9188 3.45587 15.82 2.44V2H12.37V15.67C12.3707 16.2766 12.1806 16.868 11.8265 17.3604C11.4724 17.8529 10.9723 18.2215 10.3971 18.414C9.82187 18.6065 9.20068 18.6131 8.6215 18.4329C8.04232 18.2527 7.53452 17.8948 7.17002 17.41C6.84347 16.9808 6.64351 16.4689 6.59275 15.932C6.542 15.3951 6.64247 14.8548 6.8828 14.372C7.12314 13.8892 7.49375 13.4834 7.95274 13.2003C8.41172 12.9172 8.94076 12.7681 9.48002 12.77C9.77826 12.7683 10.075 12.8121 10.36 12.9V9.4C10.0284 9.35892 9.69413 9.34221 9.36002 9.35C8.12933 9.38288 6.93494 9.77393 5.92311 10.4753C4.91127 11.1766 4.12591 12.1578 3.6632 13.2986C3.20049 14.4395 3.0805 15.6905 3.31794 16.8986C3.55538 18.1066 4.13993 19.2191 5.00002 20.1C5.88151 20.9962 7.00952 21.6101 8.24072 21.8638C9.47192 22.1175 10.7507 21.9994 11.9147 21.5246C13.0786 21.0498 14.0752 20.2397 14.7777 19.1973C15.4801 18.1548 15.8569 16.9271 15.86 15.67V8.67C17.2515 9.66395 18.92 10.1956 20.63 10.19V6.79C20.2941 6.79138 19.959 6.75787 19.63 6.69H19.59Z" fill="currentColor"></path></svg></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <div class="rt-Flex rt-r-fd-column md:rt-r-fd-row rt-r-jc-end rt-r-fw-wrap rt-r-gap-4"><a data-accent-color="gray" href="/en-ng/suppliers/" data-menu="footer" data-menu-target="suppliers" data-testid="Atomics/WtkLink" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-light rt-underline-auto rt-Box rt-r-p-1 FooterCommon_FooterLink__qOkCl">Suppliers</a><a data-accent-color="gray" href="/en-ng/legal/" data-menu="footer" data-menu-target="terms" data-testid="Atomics/WtkLink" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-light rt-underline-auto rt-Box rt-r-p-1 FooterCommon_FooterLink__qOkCl">Terms and Conditions</a><a data-accent-color="gray" href="/en-ng/privacy/" data-menu="footer" data-menu-target="privacy" data-testid="Atomics/WtkLink" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-light rt-underline-auto rt-Box rt-r-p-1 FooterCommon_FooterLink__qOkCl">Privacy</a><a data-accent-color="gray" href="/en-ng/cookie-declaration/" data-menu="footer" data-menu-target="cookies" data-testid="Atomics/WtkLink" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-light rt-underline-auto rt-Box rt-r-p-1 FooterCommon_FooterLink__qOkCl">Cookies</a><a data-accent-color="gray" href="/en-ng/security/" data-menu="footer" data-menu-target="security" data-testid="Atomics/WtkLink" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-light rt-underline-auto rt-Box rt-r-p-1 FooterCommon_FooterLink__qOkCl">Security</a><div class="rt-Box rt-r-p-1"><span data-accent-color="gray" class="rt-Text rt-r-size-2 rt-r-weight-light">© 2025 Bolt Technology OÜ</span></div></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
