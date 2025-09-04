@@ -1,0 +1,418 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI',
+               Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #191f1d;
+    background-color: #f7f9f8;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #2f313e;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #34d186;
+}
+
+.navbar .register {
+    background: #34d186;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.navbar .register:hover {
+    background: #2cb071;
+}
+
+/* Header */
+.header {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.header h3 {
+    color: #5f6563;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.header h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.header p {
+    color: #5f6563;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Call-to-Action Buttons */
+.header .container1 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+
+.header .bolt,
+.header .food {
+    flex: 1;
+    max-width: 200px;
+    font-size: 16px;
+    padding: 16px 0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.header .bolt {
+    background: #34d186;
+    color: #fff;
+}
+
+.header .bolt:hover {
+    background: #2cb071;
+}
+
+.header .food {
+    background: #e8eceb;
+    color: #191f1d;
+}
+
+.header .food:hover {
+    background: #d2d6d5;
+}
+
+/* Services Section with Scroll-Snap */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.services .service p {
+    font-size: 18px;
+    color: #5f6563;
+    margin-bottom: 40px;
+}
+
+.services .boxes {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding: 0 24px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.services .box {
+    flex: 0 0 300px;
+    background: #3a3c3b;
+    color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.services .box:hover {
+    transform: translateY(-6px);
+}
+
+.services .box h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.services .box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.services .box button {
+    background: #34d186;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.services .box button:hover {
+    background: #2cb071;
+}
+
+/* Making Cities Section */
+.making_cities {
+    background: #0e100f;
+    color: #fff;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.making_cities h1 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.making_cities p {
+    font-size: 18px;
+    color: #a9aba7;
+    margin-bottom: 24px;
+}
+
+.making_cities a {
+    font-size: 18px;
+    color: #68e6a0;
+    text-decoration: none;
+}
+
+/* About Us Section */
+.about_us {
+    background: #2b9c64;
+    color: #fff;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.about_us h2 {
+    color: #b8e8d2;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.about_us h1 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.about_us p {
+    color: #adddc7;
+    font-size: 18px;
+    margin-bottom: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_us .mission {
+    background: #dcfce7;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.about_us .mission:hover {
+    background: #b5e0c5;
+    color: #fff;
+}
+
+/* Earn Money Section */
+.earn_money {
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.earn_money .earn h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.earn_money .earn p {
+    font-size: 18px;
+    color: #5e6469;
+    margin-bottom: 40px;
+}
+
+/* Latest Features */
+.latest_features {
+    background: #0e100f;
+    color: #fff;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.latest_features h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #a3aeaa;
+}
+
+.latest_features h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    color: #eceeed;
+}
+
+.latest_features h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #a6aea0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Download Section */
+.download {
+    background: #0e100f;
+    color: #fff;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.download .text h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.download .text p {
+    font-size: 18px;
+    color: #a6aea0;
+    margin-bottom: 40px;
+}
+
+/* News Section */
+.news {
+    background: #e8eceb;
+    padding: 80px 24px;
+}
+
+.news h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.news button {
+    background: #5f6563;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.news button:hover {
+    background: #44494a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 48px;
+    }
+    .services .box {
+        flex: 0 0 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+    .header .container1 {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .services .boxes {
+        gap: 16px;
+    }
+    .services .box {
+        flex: 0 0 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 36px;
+    }
+    .services .box {
+        flex: 0 0 180px;
+    }
+    .making_cities h1 {
+        font-size: 28px;
+    }
+}
