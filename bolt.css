@@ -29,37 +29,28 @@ ul{
 }
 
 .container {
-<<<<<<< HEAD
     width: 100%;
-=======
     max-width: auto;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     margin: 0 auto;
     padding: 0 30px;
 }
 
 .navbar {
     background-color: #fff;
-<<<<<<< HEAD
     height: 50px;
     text-align: center;
     width: 100%;
-=======
     height: 200px;
     text-align: center;
     max-width: 4000px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     position: fixed;
 }
 
 .navbar img{
-<<<<<<< HEAD
     padding-top: 10px;
     width: auto;
-=======
     padding-top: 15px;
     width: 200px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     height:auto;
     cursor: pointer;
 
@@ -68,11 +59,8 @@ ul{
 .navbar a{
     text-decoration: none;
     color: #2f313e;
-<<<<<<< HEAD
     font-size: 20px;
-=======
     font-size: 60px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bold;
     cursor: pointer;
 }
@@ -83,16 +71,12 @@ ul{
     justify-content: space-around;
     align-items: center;
     height: 100%;
-<<<<<<< HEAD
     padding:0 30px 0 30px;    
-=======
     padding:0 100px 0 100px;    
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
 }
 
 .navbar ul {
     display: flex;
-<<<<<<< HEAD
     padding-left: 10px;
 }
 
@@ -106,7 +90,6 @@ ul{
     background-color: #2f313e;
     color: #fff;
     padding: 10px;
-=======
     padding-left: 40px;
 }
 
@@ -120,7 +103,6 @@ ul{
     background-color: #2f313e;
     color: #fff;
     padding: 20px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
 }
 
 .navbar .menu{
@@ -133,7 +115,6 @@ ul{
     height: 40px;
 =======
     height: 50px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     padding-top: 10px;
 }
 
@@ -153,20 +134,16 @@ ul{
 }
 
 .header h3 {
-<<<<<<< HEAD
     padding-top: 100px;
     color: #5f6563;
     font-size: 20px;
-=======
     padding-top: 400px;
     color: #5f6563;
     font-size: 90px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bold;
 }
 
 .header h1 {
-<<<<<<< HEAD
     font-size:60px;
     font-weight: bold;
     letter-spacing: -0.05em;
@@ -198,13 +175,11 @@ ul{
     margin-bottom: 90px;
     /* font-weight: bold; */
     padding-bottom: 100px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
 }
 
 .header .container1 {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     margin-bottom: 80px;
 }
 
@@ -216,7 +191,6 @@ ul{
 
 .header .bolt{
     font-size: 80px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     border-radius: 30px;
     width: 800px;
     margin-right: 40px;
@@ -230,11 +204,8 @@ ul{
 }
 
 .header .food {
-<<<<<<< HEAD
     font-size: 30px;
-=======
     font-size: 80px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     border-radius: 30px;
     width: 800px;
     background-color: #e8eceb;
@@ -258,22 +229,16 @@ ul{
 .services h1 {
     padding-top: 120px;
     padding-bottom: 20px;
-<<<<<<< HEAD
     font-size: 60px;
-=======
     font-size: 250px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bolder;
     color: #191f1d;
 }
 
 .services .service p {
     color: #5f6563;
-<<<<<<< HEAD
     font-size: 20px;
-=======
     font-size: 80px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bold;
     padding-left: 550px;
     padding-right: 550px;
@@ -321,21 +286,15 @@ ul{
 }
 
 .services .box h1 {
-<<<<<<< HEAD
     font-size: 50px;
-=======
     font-size: 160px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bold;
     color: #fff;
 }
 
 .services .box p {
-<<<<<<< HEAD
     font-size: 16px;
-=======
     font-size: 70px;
->>>>>>> 4e7c75cfb45de24069b3d5ae2e319eefa866d1bd
     font-weight: bold;
     padding-bottom: 80px;
 }
