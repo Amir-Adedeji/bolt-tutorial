@@ -40,17 +40,12 @@ ul{
     height: 50px;
     text-align: center;
     width: 100%;
-    height: 200px;
-    text-align: center;
-    max-width: 4000px;
     position: fixed;
 }
 
 .navbar img{
     padding-top: 10px;
     width: auto;
-    padding-top: 15px;
-    width: 200px;
     height:auto;
     cursor: pointer;
 
@@ -60,7 +55,6 @@ ul{
     text-decoration: none;
     color: #2f313e;
     font-size: 20px;
-    font-size: 60px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -72,7 +66,6 @@ ul{
     align-items: center;
     height: 100%;
     padding:0 30px 0 30px;    
-    padding:0 100px 0 100px;    
 }
 
 .navbar ul {
@@ -90,19 +83,6 @@ ul{
     background-color: #2f313e;
     color: #fff;
     padding: 10px;
-    padding-left: 40px;
-}
-
-.navbar ul li {
-    margin-left: 50px;
-}
-
-.navbar .register {
-    border-radius: 60px;
-    border-width: 50px;
-    background-color: #2f313e;
-    color: #fff;
-    padding: 20px;
 }
 
 .navbar .menu{
@@ -111,10 +91,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-<<<<<<< HEAD
     height: 40px;
-=======
-    height: 50px;
     padding-top: 10px;
 }
 
@@ -137,9 +114,6 @@ ul{
     padding-top: 100px;
     color: #5f6563;
     font-size: 20px;
-    padding-top: 400px;
-    color: #5f6563;
-    font-size: 90px;
     font-weight: bold;
 }
 
@@ -159,22 +133,6 @@ ul{
     margin-bottom: 30px;
     /* font-weight: bold; */
     padding-bottom: 30px;
-=======
-    font-size:340px;
-    font-weight: bold;
-    letter-spacing: -0.05em;
-    margin-top: 0;
-    padding-bottom: 80px;
-}
-
-.header p {
-    margin-top: 20px;
-    color: #5f6563;
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 90px;
-    /* font-weight: bold; */
-    padding-bottom: 100px;
 }
 
 .header .container1 {
@@ -185,12 +143,6 @@ ul{
 
 .header .bolt{
     font-size: 30px;
-=======
-    margin-bottom: 400px;
-}
-
-.header .bolt{
-    font-size: 80px;
     border-radius: 30px;
     width: 800px;
     margin-right: 40px;
@@ -205,7 +157,6 @@ ul{
 
 .header .food {
     font-size: 30px;
-    font-size: 80px;
     border-radius: 30px;
     width: 800px;
     background-color: #e8eceb;
@@ -230,7 +181,6 @@ ul{
     padding-top: 120px;
     padding-bottom: 20px;
     font-size: 60px;
-    font-size: 250px;
     font-weight: bolder;
     color: #191f1d;
 }
@@ -240,8 +190,8 @@ ul{
     font-size: 20px;
     font-size: 80px;
     font-weight: bold;
-    padding-left: 550px;
-    padding-right: 550px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 100px;
 }
 
@@ -287,14 +237,12 @@ ul{
 
 .services .box h1 {
     font-size: 50px;
-    font-size: 160px;
     font-weight: bold;
     color: #fff;
 }
 
 .services .box p {
     font-size: 16px;
-    font-size: 70px;
     font-weight: bold;
     padding-bottom: 80px;
 }

@@ -113,12 +113,12 @@ ul{
 .header h3 {
     padding-top: 100px;
     color: #5f6563;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .header h1 {
-    font-size:60px;
+    font-size:120px;
     font-weight: bold;
     letter-spacing: -0.05em;
     margin-top: 0;
@@ -144,7 +144,7 @@ ul{
 .header .bolt{
     font-size: 30px;
     border-radius: 30px;
-    width: 800px;
+    width: 200px;
     margin-right: 40px;
     background-color: #2b865a;
     color: #fff;
@@ -158,7 +158,7 @@ ul{
 .header .food {
     font-size: 30px;
     border-radius: 30px;
-    width: 800px;
+    width: 200px;
     background-color: #e8eceb;
     padding-left: 30px;
     padding-right: 30px;
@@ -168,7 +168,7 @@ ul{
 }
 
 .first_image img {
-    border-radius: 100px;
+    border-radius: 50px;
     width: 100%;    
     /* object-fit: cover; */
 }
@@ -188,7 +188,7 @@ ul{
 .services .service p {
     color: #5f6563;
     font-size: 20px;
-    font-size: 80px;
+    /* font-size: 20px; */
     font-weight: bold;
     padding-left: 100px;
     padding-right: 100px;
@@ -196,7 +196,7 @@ ul{
 }
 
 .services .boxes {
-    padding-left: 350px;
+    padding-left: 100px;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: mandatory;
@@ -204,7 +204,7 @@ ul{
     margin-right: 30px;
     text-align: left;
     border-right: 20px;
-    padding-bottom: 700px;
+    padding-bottom: 100px;
 }
 
 /* .services .boxes {
@@ -225,8 +225,8 @@ ul{
     grid-template-columns: repeat*(6, 1fr);
     gap: 10px;
     background-color: aqua;
-    flex: 0 0 1400px;
-    height: 2200px;
+    flex: 0 0 500px;
+    height: 1000px;
     margin-right:70px;
     background: #3a3c3b;
     color: #fff;
